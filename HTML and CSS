@@ -1,0 +1,1095 @@
+<!DOCTYPE html>
+<head>
+    <title> Red Bus</title>
+    <style>
+        .header1 ul {
+            list-style-type: none;
+            display: flex;
+            justify-content: flex-start;
+            margin-left: 5%;
+            justify-content: space-around;
+            align-items: center;
+            position:sticky;
+            
+        }
+        
+        #logo{
+            margin-top: -25px;
+        }
+
+
+        #bus{
+            position: relative;
+            top:-20px;
+        }
+        #body1{
+            border-left: 0.1px solid rgba(60, 59, 59, 0.723);
+            height:25px;
+            position: relative;
+            left:-50px;
+            top:15px;
+        }
+        .help {
+            display: flex;
+            align-items: center;
+            position: relative;
+            left: 120px;
+        }
+        .lang{
+            display: flex;
+            align-items: center;
+            position: relative;
+            left: 20px;
+            justify-content: space-around;
+            
+        }
+        #opt{
+            border: none;
+        }
+        .accnt{
+            display: flex;
+            align-items: center;
+            position: relative;
+            left: -90px;
+        }
+        .body2{
+            height:500px;
+            width:650px;
+            position:absolute;
+            left: 0px;
+            align-items: center;
+            display: inline-block;
+            background-color: white;
+        }
+        .textbox{
+            display: flex;
+            justify-content: center;
+            position: absolute;
+            top: 200px;
+            left: 240px;
+            height: 99px;
+            width: 300    
+        }
+        #text1{
+            border-top-left-radius: 30px;
+            border-top-right-radius: 0px;
+            border-bottom-left-radius: 30px;
+            border-bottom-right-radius: 0px;
+            justify-content: center;
+            align-content: center;
+            border: none;
+            width: 300px;
+        }
+       
+       #text3,#buttonsea{
+            border-right: 0.1px solid rgba(202, 195, 195, 0.781);
+            border-bottom: none;
+            border-left: none;
+            border-top: none;
+        }
+        #text2{
+            border-right: 0.1px solid rgba(202, 195, 195, 0.781);
+            border-bottom:none;
+            border-top:none;
+            border-left: 0.1px solid rgba(202, 195, 195, 0.781);
+            width: 300px;
+        }
+        #text3{
+            width:300px;
+        }
+        #buttonsea{
+            width:200px;
+            background-color: rgb(216, 78, 85);
+            border-top-right-radius: 30px;
+            border-bottom-right-radius: 30px ;
+            color: white;
+            font-size: 20px;
+        }
+        #heading{
+            color:rgb(255, 254, 254);
+            font-size: 32px;
+            position: absolute;
+            top:23px;
+            left: 430px;
+            font-family: Arial, Helvetica, sans-serif;
+            display: inline-block;
+            width: 800px;
+        }
+        .img{
+            position: absolute;
+            top:220px;
+            justify-content: space-between;
+        }
+        #img1{
+            position: absolute;
+            left: 250px;
+            width: 100px;
+            top: 1px;
+        }
+        #img2{
+            position: relative;
+            left: 550px;
+            width: 70px;
+            top: 15px;   
+        }
+        #cal{
+            display: flex;
+            justify-content: space-around;
+            position: relative;   
+            left: 855px;
+            top: -23px;
+            color:grey;
+            font-size: 32px;
+        }
+        #date{
+            justify-content: center;
+            position: relative;
+            top:-75px;
+            left: 920px;
+            font-size: 23px;
+        }
+        .banner{
+            position: relative;
+            top: 550px;
+            border: none;
+            box-shadow: 2px 2px 10px rgb(175, 174, 174);
+            border-radius: 20px;
+            display: flex;
+            background-color: white;
+            height: 300px;
+            width: 1150px;
+            position: absolute;
+            left: 240px;
+        }
+        #TRO{
+            font-size: 30px;
+            font-weight: 15px;
+            position: absolute;
+            padding-left: 30px;
+            padding-top:20px ;
+        }
+        #viewall{
+            color: blue;
+            text-align: center;
+            font-weight: 40px;
+            font-size: 20px;
+            height: 50px;
+            width: 120px;
+            position: relative;
+            left: 960px;
+            top: 45px;
+            border: 0.1px solid rgb(211, 205, 205);
+            border-radius: 20px;
+            background-color: white;
+        }
+        .bannerimg{
+            
+            padding-top: 110px;
+            position: absolute;
+            left: 28px;
+            display: flex;
+            justify-content: space-between;
+            
+        }
+        
+        #o2{
+           position: relative;
+           left: 15px;
+        }
+        #o3{
+            position: relative;
+            left:30px;
+        }
+        #o4{
+            position: relative;
+            left: 45px;
+        }
+        .review{
+            height:350;
+            width:1150px;
+            position: relative;
+            top: 750px;
+            left:200px;
+            
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+        }
+        #govt{
+            font-size: 30px;
+            font-weight: 1px;
+            letter-spacing: 3px;
+            font-family:monospace;
+
+        }
+        #view2{
+            color:blue;
+            border-radius: 15px;
+            border: 0.1px solid rgb(151, 149, 149);
+            text-align: center;
+            height: 50px;
+            width:120px;
+            position: relative;
+            left: 660px;
+            background-color: white;
+            font-weight: 40px;
+            font-size: 20px;
+        }
+        .rimg{
+            position: relative;
+            top: 60px;
+            left:100px;
+
+        }
+        #reimg{
+            position: absolute;
+            left:-650px;
+            border: 0.1px solid rgb(197, 194, 194);
+            border-radius: 20px;
+            box-shadow: 3px 3px 3px rgb(182, 182, 182);
+            border: none;
+        }
+        #reimg2{
+            position: relative;
+            top:165px;
+            left: -140px;
+            border: 0.1px solid rgb(204, 200, 200);
+            border-radius: 20px;
+            border: none;
+            box-shadow: 3px 3px 3px rgb(182, 182, 182);;
+        }
+        #reimg3{
+            position: absolute;
+            top: 170px;
+            left: 1000px;
+            border-radius: 10px;
+            border: none;
+            box-shadow: 0px 3px 3px rgb(182, 182, 182);;
+        }
+        .body3{
+            position:relative;
+            top: 950px;
+            left: 230px;
+            width: 600px;
+            display: flex;
+        }
+        #p1,#p2,#p3{
+            font-size: 40px;
+            line-height: 34px;
+        }
+        #p1{
+            display: inline-block;
+        }
+        #p2{
+            display: flex;
+            position: relative;
+            top: -60px;
+
+        }
+        #p3{
+            position: relative;
+            top:-70px;
+        }
+        #Tickets{
+            width: 800px;
+            height: 200px;
+            font-size: 20px;
+          
+        }
+        #trainimg{
+            position: relative;
+            left: 240px;
+            border: 1px solid black;
+            border: none;
+            border-radius: 25px;
+            width:500px;
+        }
+        #trainticket{
+            position: relative;
+            display: flex;
+            font-size: 30px;
+        }
+        #trainticketimg{
+            position: absolute;
+            top: 300px;
+            left: -800px;
+            justify-content:flex-end;
+        }
+        #trainp{
+            position: absolute;
+            left: 100px;
+            top: 290px;
+            display: flex;
+            color: rgb(216, 78, 85);
+            font-size: 20px;
+            font-weight: 200;
+        }
+        #dash{
+            color: rgb(216, 78, 85);
+            font-weight: 900;
+            font-size:35px;
+            position: absolute;
+            left:5px;
+            top:280px;
+        } 
+        #para{
+            width: 700px;
+            height:390px;
+            position: absolute;
+            left: 5px;
+            top: 380px;
+            font-size: 21px;
+
+        }
+        #bookbutton{
+            background-color:rgb(216, 78, 85);
+            color:white;
+            position:absolute;
+            border: none;
+            border-radius: 15px;
+            text-align: center;
+            height: 50px;
+            width: 220px;
+            font-size: large;
+            padding: 8px;
+            position: absolute;
+            top: 320px;
+            left: 10px;
+        }
+        .banner2{
+            position: absolute;
+            top: 2100px;
+            left: 200px;
+        }
+        .flags{
+            position: absolute;
+            top: 2600px;
+            left: 200px;
+            font-family: 'Lucida Sans', ;
+        }
+        #fl2 li{
+            list-style-type: none;
+            display: inline-block;
+            justify-content:space-between;
+            align-items: baseline;
+            word-spacing: 30px;
+        }
+        #f2{
+            position: relative;
+            left: 30px;
+        }
+        #f3{
+            position: relative;
+            left: 50px;
+        }
+        #f4{
+            position: relative;
+            left: 75px;
+        }
+        #f5{
+            position: relative;
+            left: 100px;
+        }
+        #f6{
+            position: relative;
+            left: 130px;
+        }
+        #f7{
+            position: relative;
+            left: 165px;
+        }
+        #f8{
+            position: relative;
+            left: 190px;
+        }
+        .flnames li{
+            list-style-type: none;
+            display: inline-block;
+            
+            font-weight: bolder;
+            font-size: 20px;
+        }
+    #fln{
+        justify-content: space-around;
+        word-spacing: 110px;
+    }
+    #indon{
+        position: relative;
+        left: -30px;
+    }
+    #mala{
+        position: relative;
+        left: -80px;
+    }
+    #per{
+        position: relative;
+        left:-100px;
+    }
+    #singa{
+        position: relative;
+        left: -120px;
+    }
+    #viet{
+        position: relative;
+        left:-150px;
+    }
+    #camb{
+        position: relative;
+        left: 1100px;
+        top: -20px;
+
+    }
+    .paragraph{
+        position: absolute;
+        width: 1200px;
+        top: 2900px;
+        left: 200px;
+        line-height: 28px;
+    }
+    #pa1,#pa2{
+        font-size: 20px;
+        color:rgb(44, 40, 40);
+        font-weight: 20 ;
+    }
+    #h1{
+        font-weight: 50;
+        font-size: 35px;
+    }
+    .booking{
+        position: absolute;
+        left: 195px;
+        top: 3300px;
+        width:1200px;
+    }
+    #bush1{
+        font-weight:50;
+        font-size: 40px;
+    }
+    #buspa{
+        font-size: 20px;
+        font-weight: 25%;
+        color:rgb(44, 40, 40);
+    }
+    #bookimg{
+        position: absolute;
+        top: 3500px;
+        left: 196px;
+        border:0.1px solid rgb(215, 214, 214);
+        border-radius: 20px;
+    }
+    .faq {
+        position: absolute;
+        top:3730px;
+        left:195px;
+        font-weight: 30;
+        font-size: 20px;
+        display: inline;   
+    }
+    #fa{
+        font-weight: 50;
+        font-size: 40px;
+        color: rgb(57, 56, 56);
+        font-family: Arial, Helvetica, sans-serif;
+    }
+    .faqlist li{
+        list-style-type: none;
+        display: inline-block;
+        justify-content: space-around;
+        letter-spacing: 5px;
+        position: absolute;
+        top: 3850px;
+        left:195px;
+        align-items: flex-start;
+    }
+    #ins{
+        position: absolute;
+        left: 740px;
+        letter-spacing: normal;
+        font-size: 20px;
+        color: rgb(35, 35, 35);
+
+    }
+    #cancel{position: absolute;
+        left: 530px;
+        letter-spacing: normal;
+        font-size: 20px;
+        color: rgb(35, 35, 35);
+    }
+    #pay{
+        position: absolute;
+        left: 440px;
+        letter-spacing: normal;
+        font-size: 20px;
+        color: rgb(35, 35, 35);
+    }
+    #tr{
+        position: absolute;
+        left: 290px;
+        letter-spacing: normal;
+        font-size: 20px;
+        color: rgb(35, 35, 35);
+    }
+    #gen{
+        font-size: 20px;
+        color: rgb(35, 35, 35);
+        letter-spacing: normal;
+
+    }
+    #dash2{
+        position: absolute;
+        top:3740px;
+        left: 192px;
+        font-size: 70px;
+        color: rgb(216, 78, 85);;
+    }
+    .borders{
+        position:absolute;
+        top: 3920px;
+        left:  195px;  }
+        #borderp1{
+            border: 0.1px solid rgb(215, 212, 212);
+            width:1200px;
+            height: 40px;
+            border-radius: 20px;
+            text-align: left;
+            padding-left:30px;
+            padding-top: 25px;
+        }
+        #borderp2{
+            border: 0.1px solid rgb(215, 212, 212);
+            width:1200px;
+            height: 40px;
+            border-radius: 20px;
+            text-align: left;
+            padding-left:30px;
+            padding-top: 25px;
+        }
+        #borderp3{
+            border: 0.1px solid rgb(215, 212, 212);
+            width:1200px;
+            height: 40px;
+            border-radius: 20px;
+            text-align: left;
+            padding-left:30px;
+            padding-top: 25px;
+
+        }
+        #borderp4{
+            border: 0.1px solid rgb(215, 212, 212);
+            width:1200px;
+            height: 40px;
+            border-radius: 20px;
+            text-align: left;
+            padding-left:30px;
+            padding-top: 25px;
+
+        }
+        #borderp5{
+            border: 0.1px solid rgb(215, 212, 212);
+            width:1200px;
+            height: 40px;
+            border-radius: 20px;
+            text-align: left;
+            padding-left:30px;
+            padding-top: 25px;
+
+        }
+        #borderp6{
+            border: 0.1px solid rgb(215, 212, 212);
+            width:1200px;
+            height: 40px;
+            border-radius: 20px;
+            text-align: left;
+            padding-left:30px;
+            padding-top: 25px;
+
+        }
+        #borderp7{
+            border: 0.1px solid rgb(215, 212, 212);
+            width:1200px;
+            height: 40px;
+            border-radius: 20px;
+            text-align: left;
+            padding-left:30px;
+            padding-top: 25px;
+
+        }
+        #plus{
+            padding-left: 1150px;
+            position: relative;
+            top: -25px;
+            font-size: 35px;
+        }
+        #plus2{
+            padding-left: 1150px;
+            position: relative;
+            top: -25px;
+            font-size: 35px;
+        }
+        #plus3{
+            padding-left: 1150px;
+            position: relative;
+            top: -25px;
+            font-size: 35px;
+        }
+        #plus4{
+            padding-left: 1150px;
+            position: relative;
+            top: -25px;
+            font-size: 35px;
+        }
+        #plus5{
+            padding-left: 1150px;
+            position: relative;
+            top: -25px;
+            font-size: 35px;
+        }
+        #plus6{
+            padding-left: 1150px;
+            position: relative;
+            top: -25px;
+            font-size: 35px;
+        }
+        #plus7{
+            padding-left: 1150px;
+            position: relative;
+            top: -25px;
+            font-size: 35px;
+        }
+        .popular{
+            background-color: #f5f5f5;
+            position: absolute;
+            top: 4600px;
+            width: 1550px;
+            height: 820px;
+            left: 0%;
+        }
+        #pop1{
+            
+            width: 1250px;
+            position: absolute;
+            top: 50px;
+            left: 195px;
+            font-size: 25px;
+            color:rgb(82, 79, 79)
+        }
+        #dash3{
+            position: absolute;
+            top: 90px;
+            left:195px;
+            color:grey;
+            
+        }
+        #down1{
+            position: absolute;
+            left: 1200px;
+            font-size: 40px;
+
+        }
+        #pop2{
+            
+            width: 1250px;
+            position: absolute;
+            top: 130px;
+            left: 195px;
+            font-size: 25px;
+            color:rgb(82, 79, 79)
+        }
+        #dash4{
+            position: absolute;
+            top: 170px;
+            left:195px;
+            color:rgb(2, 2, 2);
+            
+        }
+        #down2{
+            position: absolute;
+            left: 1200px;
+            font-size: 40px;
+
+        }
+        #pop3{
+            
+            width: 1250px;
+            position: absolute;
+            top: 210px;
+            left: 195px;
+            font-size: 25px;
+            color:rgb(82, 79, 79)
+        }
+        #dash5{
+            position: absolute;
+            top: 250px;
+            left:195px;
+            color:rgb(2, 2, 2);
+            
+        }
+        #down3{
+            position: absolute;
+            left: 1200px;
+            font-size: 40px;
+
+        }
+        #billion{
+            position: absolute;
+            top: 4950px;
+            left: 195px;
+            width: 300px;
+            height: 300px;
+        }
+        #logoimgl{
+            position: relative;
+            top: 50px;
+        
+        }
+        #lastpa{
+            position: relative;
+            top: 40px;
+            font-weight: 50;
+            color:rgb(119, 118, 118);
+            line-height: 25px;
+        }
+        .list1{
+            display: block;
+            justify-items: center;
+            position: absolute;
+            top: 5000px;
+            left:600px;
+        }
+        #bold{
+            font-weight: 50px;
+            font-size: 20px;
+        }
+        .list2{
+            display: block;
+            justify-items: center;
+            position: absolute;
+            top: 5000px;
+            left:850px;
+        }
+        #info{
+            font-weight: 50px;
+            font-size: 20px;
+
+        }
+        .list3{
+            display: block;
+            justify-items: center;
+            position: absolute;
+            top: 5000px;
+            left:1100px; 
+        }
+        .list4{
+            display: block;
+            justify-items: center;
+            position: absolute;
+            top: 5000px;
+            left:1300px; 
+        }
+        #global{
+            font-weight: 50px;
+            font-size: 20px;
+        }
+        #cities{
+            font-weight: 50px;
+            font-size: 20px;
+        }
+        #dash6{
+            position: absolute;
+            top: 5310px;
+            color:rgb(189, 189, 189);
+            left: 195px;
+        }
+        #rights{
+            position: absolute;
+            top:5370px;
+            left:195px;
+            color:rgb(105, 105, 105);
+        }
+        #lastimg{
+            position: absolute;
+            top:5350px;
+            left: 1250px;
+        }
+      
+      
+
+        
+    
+   
+
+    
+ 
+     
+
+    </style>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+       
+</head>
+<body>
+    <!--header-->
+    <header class="header1">
+        <ul>
+        <li><img src="https://st.redbus.in/Images/rdc/rdc-redbus-logo.svg" height="40px" width="100px"></li>
+        <li>
+            <div id="body1">
+            </div>
+            <div >
+                <img src="Screenshot (89).png" id="logo" height="60px" width="200px">
+            </div>
+        </li>
+        <div class="help">
+        <li><span class="material-symbols-outlined">
+            headset_mic
+            </span></li>
+        <li><p>  &nbsp;&nbsp;&nbsp;Help</p></li>
+        </div>
+        <div class="lang">
+        <li><span class="material-symbols-outlined">
+                translate
+                </span></li>
+        <li><select id="opt">
+                <option> English</option>
+                <option> Kannada</option>
+                <option> Hindi</option>
+                <option> Tamil</option>
+            </select></li>
+        </div>
+        <div class="accnt">
+        <li><span class="material-symbols-outlined">
+                account_circle
+                </span></li>
+        <li><p> &nbsp;&nbsp;&nbsp; Account</p></li>
+        </ul>
+        </div>   
+    </header>
+    <!--body2-->
+    <section class="body2">
+        <img src="https://s3.rdbuz.com/images/webplatform/india/Homepage-header-800.webp" width="1550px" height="500">
+        <h1 id="heading"> India's No 1 Online Bus Ticket Booking Site</h1>
+        <div class="textbox">
+        <input type="text" id="text1">
+
+        <input type="text" id="text2">
+        <input type="text" id="text3">
+        <button id="buttonsea"> <b>SEARCH BUSES</b></Search></button>
+        </div>
+        <div class="img">
+            <img src="from.png" id="img1">
+            <img src="to.png" id="img2" >
+            <span class="material-symbols-outlined" id="cal">
+                calendar_month
+            </span>
+            <p id="date"> Date </p>
+        </div>
+    </section> 
+    <!--banner-->
+    <section class="banner">
+        <h1 id="TRO"> TRENDING OFFERS</h1>
+        <button id="viewall"> View All</button>
+        <div class="bannerimg">
+            <img src="offer1.png"  id="o1" height="150px" width="260px">
+            <img src="offer2.png" id="o2" height="150px" width="260px">
+            <img src="offer3.png" id="o3" height="150px" width="260px">
+            <img src="offer4.png" id="o4" height="150px" width="260px">
+        </div>
+    </section>
+    <!--review-->
+    <section class="review">
+        <p id="govt"> GOVERNMENT BUSES</p>
+        <button id="view2">View All </button>
+        <div class="rimg">
+            <img src="re1.png" id="reimg" width="450px" height="200px">
+        </div>
+        <img src="re2.png" id="reimg2" width="450px" height="200px">
+        <img src="re3.png" id="reimg3" width="200px" height="200px">
+    </section>
+    <!--body-->
+    <section class="body3">
+        <div id="Tickets">
+        <p id="p1">NOW, <b> GET MORE THAN  </b> </p>
+        <p id="p2"> <b>JUST BUS</b>&nbsp;TICKETS WITH</p>
+        <p id="p3"> REDBUS!</p>   
+    </div>
+    <div id="trainimg">
+        <img src="train.webp"> </div>
+        <div id="trainticket">
+            <img src="	https://s3.rdbuz.com/web/images/layout/rail_vertical.svg" width="140px" height="40px" id="trainticketimg">
+        </div>
+        <P id="trainp"><b> Train Tickets </b></P>
+        <p id="dash"> _____________________</p>
+        <div id="para">
+        <p>Book IRCTC Train Tickets on redRail simple & superfast booking</p>
+        <p> process with no service fee + no payment gateway charge.</p>
+        <img src="para.png" width="350px" height="200px">
+        <button id="bookbutton"> <b>Book Train Tickets </b></button>
+    </div>
+    </section>
+    <!--banner-->
+    <section class="banner2">
+        <img src="banner.png" height="450px" width="1200px">
+    </section>
+    <!--flagspictures-->
+    <picture class="flags">
+        <h1>Global Presence</h1>
+        <div id="flaglist">
+        <ul id="fl2">
+        <li> <img src=https://s3.rdbuz.com/web/images/homeV2/LATAM/GlobalPresencev2/Colombia.svg id="f1"> </li>
+        <li> <img src=https://s3.rdbuz.com/web/images/homeV2/LATAM/GlobalPresencev2/India.svg id="f2"></li>
+        <li> <img src=https://s3.rdbuz.com/web/images/homeV2/LATAM/GlobalPresencev2/Indonesia.svg id="f3"></li>
+        <li> <img src=	https://s3.rdbuz.com/web/images/homeV2/LATAM/GlobalPresencev2/Malaysia.svg id="f4"></li>
+        <li> <img src=https://s3.rdbuz.com/web/images/homeV2/LATAM/GlobalPresencev2/Peru.svg id="f5"></li>
+        <li> <img src=https://s3.rdbuz.com/web/images/homeV2/LATAM/GlobalPresencev2/Singapore.svg id="f6"></li>
+        <li> <img src=https://s3.rdbuz.com/web/images/homeV2/LATAM/GlobalPresence/Vietnam.svg id="f7"></li>
+        <li> <img src=	https://s3.rdbuz.com/web/images/homeV2/LATAM/GlobalPresence/Cambodia.svg id="f8"> </li> 
+        </ul>
+        </div>
+        <div class="flnames">
+            <ul id="fln">
+                <li>Colombia</li>
+                <li>India</li>
+                <li id="indon">Indonesia</li>
+                <li id="mala">Malaysia</li>
+                <li id="per">Peru</li>
+                <li id="singa">Singapore</li>
+                <li id="viet">Vietnam</li>
+                <li id="camb">Cambodia</li>
+            </ul>
+        </div>
+    </picture>
+    <!--pargraph-->
+    <paragraph class="paragraph">
+        <h1 id="h1"> BOOK BUS TICKETS ONLINE</h1>
+        <p id="pa1">redBus is India's largest brand for online bus ticket booking and offers an easy-to-use online bus and train ticket booking; with over 36 million satisfied customers, 3500+ bus operators to choose from, and plenty of offers on bus ticket booking, redBus makes road journeys super convenient for travellers. A leading platform for booking bus tickets, redBus has been the leader in online bus booking over the past 17 years across thousands of cities and lakhs of routes in India.
+  </p>
+  <p id="pa1">Booking a bus ticket online on the redBus app or website is very simple. You can download the redBus app or visit redbus.in and enter your source, destination & travel date to check the top-rated bus services available. You can then compare bus prices, user ratings & amenities, select your preferred seat, boarding & dropping points and pay using multiple payment options like UPI, debit or credit card, net banking and more. With redBus, get assured safe & secure payment methods and guaranteed travel with the best s... <a href="https://www.redbus.in/">read more</a></p>
+    </paragraph>
+    <!--booking-->
+    <booking class="booking">
+        <h1 id="bush1">Bus Booking redDeals on redBus</h1>
+        <p id="buspa">Don't miss out on these incredible offers, book your bus tickets now and travel with convenience and affordability. Hurry, grab the best bus booking deals before they're gone!</p>
+    </booking>
+    <booktickets>
+        <img src="bookings.png" id="bookimg" width="1200px" height="170px">
+    </booktickets>
+    <faq class="faq">
+        <h1 id="fa">FAQs related to Bus Tickets Booking</h1>  
+    </faq>
+    <faqlist class="faqlist">
+        <div class="faqstate">
+            <ul >
+                <li id="gen">General</li>
+                <li id="tr">Ticket-related</li>
+                <li id="pay">Payment</li>
+                <li id="cancel">Cancellation & Refund</li>
+                <li id="ins">Insurance</li>
+                </ul>
+            </div>
+            <p id=dash2> __</p>
+            
+    </faqlist>
+    <!--border-->
+    <borders class="borders">
+        <p id="borderp1"><b>Can I track the location of my booked bus online?</b> <span class="material-symbols-outlined" id="plus">
+            add
+            </span></p>
+        <p id="borderp2"><b>What are the advantages of purchasing a bus ticket with redBus?</b><span class="material-symbols-outlined" id="plus2">
+            add
+            </span></p>
+        <p id="borderp3"><b>Do I need to create an account on the redBus site to book my bus ticket?</b><span class="material-symbols-outlined" id="plus3">
+            add
+            </span></p>
+        <p id="borderp4"><b>Does bus booking online cost me more?</b><span class="material-symbols-outlined" id="plus4">
+            add
+            </span></p>
+        <p id="borderp5"><b>How can I get the discounts on the bus booking?</b><span class="material-symbols-outlined" id="plus5">
+            add
+            </span></p>
+        <p id="borderp6"><b>What's New in Bus Booking on redBus?</b><span class="material-symbols-outlined" id="plus6">
+            add
+            </span></p>
+        <p id="borderp7"><b>Can I book a Government bus ticket on redBus?</b><span class="material-symbols-outlined" id="plus7">
+            add
+            </span></p>
+    </borders>
+    <!--footer-->
+    <footer>
+        <div class="popular">
+            <p id="pop1"> <b> Popular Bus Routes</b> <span class="material-symbols-outlined" id="down1">
+                keyboard_arrow_down
+                </span></p>
+            <p id="dash3"> ___________________________________________________________________________________________________________________________________________________________</p>
+            <p id="pop2"> <b> Popular Cities</b> <span class="material-symbols-outlined" id="down2">
+                keyboard_arrow_down
+                </span></p>
+            <p id="dash4"> ___________________________________________________________________________________________________________________________________________________________</p>
+            <p id="pop3"> <b> Popular Bus Operators</b> <span class="material-symbols-outlined" id="down3">
+                keyboard_arrow_down
+                </span></p>
+            <p id="dash5"> ___________________________________________________________________________________________________________________________________________________________</p>
+        </div>
+        <div id="billion">
+            <img src="https://st.redbus.in/Images/rdc/rdc-redbus-logo.svg" height="70px" width="140px" id="logoimgl">
+            <p id="lastpa">redBus is the world's largest online bus ticket booking service trusted by over 25 million happy customers globally. redBus offers bus ticket booking through its website, iOS and Android mobile apps for all major routes.</p>
+        </div>
+        <div class="list1">
+            <p id="bold"> <b> About redBus</b></p>
+            <p>Investor Relations</p>
+            <p>Contact us</p>
+            <p>Mobile version</p>
+            <p>redBus on mobile</p>
+            <p>Offers</p>
+            <p>Careers</p>
+            <p>Values</p>
+        </div>
+        <div class="list2">
+            <p id="info"> <b>Info</b></p>
+            <p>T&C</p>
+            <p>Privacy policy</p>
+            <p>FAQ</p>
+            <p>Blog</p>
+            <p>Bus operator registration</p>
+            <p>Insurance partner</p>
+            <p>Primo Bus</p>
+            <p>Bus Timetable</p>   
+        </div>
+        <div class="list3">
+            <p id="global"><b>Global Sites</b></p>
+            <p> India</p>
+            <p> Singapore</p>
+            <p> Malaysia</p>
+            <p> Indonesia</p>
+            <p> Peru</p>
+            <p> Cambodia</p>
+            <p> Vietnam</p>
+        </div>
+        <div class="list4">
+            <p id="cities"><b>Our Partners</b></p>
+            <p>Goibibo Bus</p>
+            <p>Goibibo Hotels</p>
+            <p>Makemytrip Hotels</p>
+            
+        </div>
+        <p id="dash6"> __________________________________________________________________________________________________________________________________________________________</p>
+        <p id="rights">Ⓒ 2024 Redbus India Pvt Ltd. All rights reserved</p>
+        <img src="insta.png" id="lastimg" width="200px";>
+    </footer>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
